@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyPinsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:id="@+id/layout_all_board"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/view"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/all_board"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/all_board"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/layout_log_out"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/log"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/log_out"
+                    android:layout_marginTop="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:text="@string/log_out"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid_view"
+        android:numColumns="2"
+        android:layout_below="@+id/logo"
+        android:horizontalSpacing="10dip"
+        android:verticalSpacing="10dip"
+        android:padding="10dip"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:cacheColorHint="@android:color/transparent"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_horizontal"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/black_gray"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo_main_page"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/email_layout"
+        android:background="@drawable/round_cornor"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="@dimen/fourty"
+        android:layout_marginLeft="@dimen/fourty"
+        android:layout_marginRight="@dimen/fourty"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/email"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black_gray"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/password_layout"
+        android:background="@drawable/round_cornor"
+        android:layout_below="@+id/email_layout"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_marginLeft="@dimen/fourty"
+        android:layout_marginRight="@dimen/fourty"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:background="@null"
+            android:textColorHint="@color/black_gray"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/login"
+        android:layout_marginLeft="@dimen/fifty"
+        android:layout_marginRight="@dimen/fifty"
+        android:background="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/fifty"
+        android:layout_below="@+id/password_layout"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/fb"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/facebook_sign_in_button_png_26"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_below="@+id/login"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_up"
+        android:layout_below="@+id/fb"
+        android:text="@string/sign_up"
+        android:layout_marginTop="@dimen/twenty"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/red"/>
+
+    <!--<View-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@id/sign_up"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@color/red"/>-->
+
+</RelativeLayout>

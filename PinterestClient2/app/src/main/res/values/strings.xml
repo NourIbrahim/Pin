@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Pinterest Client</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up On Pinterset</string>
+    <string name="all_board">All Board</string>
+    <string name="log_out">log out</string>
+    <string name="create_board">Create Board</string>
+
+    <string-array name="paths_array">
+        <item>Get Pin by Id</item>
+        <item>Get Board by Id</item>
+        <item>Get my likes</item>
+        <item>Get my following Interests</item>
+        <item>Get Pins of a board</item>
+        <item>Get user by name or Id</item>
+    </string-array>
+</resources>
